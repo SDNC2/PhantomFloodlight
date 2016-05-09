@@ -334,6 +334,10 @@ class FloodlightConnector(BaseConnector):
         except Exception as e:
             return action_result.set_status(phantom.APP_ERROR, FLOODLIGHTAPP_ERR_SERVER_CONNECTION, e)
 
+        # Floodlight v1.2 and earlier returns a list.  Later versions return a root object containing a list.
+        if isinstance(device_list, dict):
+            device_list = device_list["devices"]
+
         # Rearrange into a table-friendly format here.
         # This should definitely change if we ever get a "tree" render type
         result = {"devices": [], "success": True}
