@@ -35,7 +35,7 @@ This allows Phantom to perform command and control functions for Floodlight.
 ## Deployment instructions
 
 1. Obtain [Phantom](https://www.phantom.us/product.html) appliance from Phantom Cyber (works with Community Edition or Licensed)
-2. `tar czf floodlightapp.tgz -C floodlightapp`
+2. `tar czf floodlightapp.tgz -C floodlightapp .`
 3. From the Phantom web interface, select "Import App" from the *Administration->Apps* tab.
    * Select the `floodlightapp.tgz` file created above
    * Check *"Replace an existing app"* if app is already installed
