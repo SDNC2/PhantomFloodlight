@@ -1345,7 +1345,7 @@
 		{
 			"action":"delete firewall rule",
 			"description":"Delete a firewall rule.",
-			"type":"generic",
+			"type":"correct",
 			"identifier":"delete_firewall_rule",
 			"read_only":false,
 			"parameters":{
@@ -1380,7 +1380,7 @@
 		{
 			"action":"list firewall rules",
 			"description":"List firewall rules stored in the controller.",
-			"type":"generic",
+			"type":"investigate",
 			"identifier":"list_firewall_rules",
 			"read_only":true,
 			"parameters":{
@@ -1498,7 +1498,7 @@
 		{
 			"action":"list switches",
 			"description":"List SDN switches managed by the controller.",
-			"type":"generic",
+			"type":"investigate",
 			"identifier":"list_switches",
 			"read_only":true,
 			"parameters":{
@@ -1548,7 +1548,7 @@
 		{
 			"action":"list internal links",
 			"description":"List single-hop links discovered via LLDP.",
-			"type":"generic",
+			"type":"investigate",
 			"identifier":"list_internal_links",
 			"read_only":true,
 			"parameters":{
@@ -1610,7 +1610,7 @@
 		{
 			"action":"list external links",
 			"description":"List multi-hop links discovered via BDDP.",
-			"type":"generic",
+			"type":"investigate",
 			"identifier":"list_external_links",
 			"read_only":true,
 			"parameters":{
@@ -1672,7 +1672,7 @@
 		{
 			"action":"list devices",
 			"description":"List devices tracked by the SDN controller.",
-			"type":"generic",
+			"type":"investigate",
 			"identifier":"list_devices",
 			"read_only":true,
 			"parameters":{
@@ -1772,7 +1772,7 @@
 		{
 			"action":"list static flows",
 			"description":"List static flow rules.",
-			"type":"generic",
+			"type":"investigate",
 			"identifier":"list_static_flows",
 			"read_only":true,
 			"parameters":{
